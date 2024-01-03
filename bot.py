@@ -13,5 +13,6 @@ bot = commands.Bot(command_prefix='/', description=description, intents=intents)
 async def on_ready():
     print(f"Logged in as {bot.user.name}")
     await bot.load_extension('numeric_commands_cog')
+    await bot.load_extension('conversation_cog')
 
 bot.run('token')

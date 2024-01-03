@@ -12,4 +12,4 @@ def add_two_numbers(first_number, second_number):
 unicode_emojis = ['😄', '😃', '😀', '😊', '😉', '🙃', '🤣', '😍', '😘', '😋']
 
 def get_random_emoji():
-    return None
+    return random.choice(unicode_emojis)
