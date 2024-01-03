@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 
 import utils
@@ -21,6 +20,8 @@ class Numeric(commands.Cog):
 
     @commands.command(name='add')
     async def add(self, ctx, first_number: str = None, second_number: str = None):
+        """Adds two numbers. For example: /add 20 20"""
+
         if utils.are_numbers(first_number, second_number):
             return await ctx.send('Please specify the numbers to be added. For example: /add 5 6')
         
